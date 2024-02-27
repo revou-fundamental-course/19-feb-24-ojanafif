@@ -27,8 +27,22 @@ a {
     text-decoration: none;
 }
 
-h2, h5 {
+h2 {
     display: flex;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+h4 {
+    display: inline;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+h5 {
+    display: inline;
     align-items: center;
     padding: 10px;
     color: whitesmoke;
@@ -40,7 +54,7 @@ p {
     align-items: center;
     padding: 10px;
     color: whitesmoke;
-    margin-left: 15px;
+    margin-left: 12px;
 }
 
 .navigation {
@@ -53,20 +67,29 @@ p {
 }
 
 .our-office {
-    display: flex;
-    justify-content: space-around;
     text-align: center;
 }
 
 .circle-image {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    border-style: inherit;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Untuk membuat gambar menjadi bulat */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 100px; /* Menambahkan jarak antara gambar */
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: top; /* Mengatur gambar dan keterangan tetap sejajar */
+}
+
+.caption {
+    margin-top: 5px; /* Menambahkan jarak antara gambar dan keterangan */
+    margin: 0 150px;
+    font-weight: bold;
 }
 
 .inquiry-box {
