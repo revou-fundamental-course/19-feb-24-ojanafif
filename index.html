@@ -14,18 +14,18 @@
         <img src="assets/img/Logo-RevoU-5.png" alt="Logo" width="40px" height="40px">
         <ul class="navigation">
             <b>
-                <li>Home</li>
-                <li>Our Profile</li>
-                <li>Message Us</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-headquarter">Our Profile</a></li>
+                <li><a href="#message-us">Message Us</a></li>
             </b>
         </ul>
     </header>
     
-    <h2>Hii <span id="namaHeader"></span>, Welcome To My Website</h2>
+    <h2 id="home">Hii <span id="namaHeader"></span>, Welcome To My Website</h2>
     <p>Ini adalah halaman pertama website saya.</p>
     
     <hr>
-    <header class="sub">
+    <header class="sub" id="our-headquarter">
         <h2>Our Headquarter</h2>
     </header>
     <div class="our-office">
@@ -44,38 +44,37 @@
     </div>
 
     <hr>
-    <header class="sub">
+    <header class="sub" id="message-us">
         <h2>Message Us</h2>
     </header>
-    <div class="inquiry-box">
-        <form name="message-form" onsubmit="return validateForm()">
-            Nama: <input type="text" name="namaLengkap" placeholder="Nama Lengkap" />
-            <br />
-            Tanggal Lahir:
-            <input type="date" name="tglLahir" />
-            <br />
-
-            Jenis Kelamin:
-            <input type="radio" id="male" name="jenis" value="Laki-Laki" />
-            <label for="male">Laki-Laki</label>
-            <input type="radio" id="female" name="jenis" value="Perempuan" />
-            <label for="female">Perempuan</label>
-            <br />
-
-            Pesan:
-            <textarea name="pesan" placeholder="Pesan"></textarea>
-            <br />
-
-            <input type="submit" value="submit" />
-        </form>
-        <div class="output">
-            <p>Nama : <span id="namaPengirim"></span></p>
-            <p>Tanggal Lahir : <span id="tglLahirPengirim"></span></p>
-            <p>Jenis Kelamin : <span id="jenisPengirim"></span></p>
-            <p>Pesan : <span id="pesanPengirim"></span></p>
-        </div>
-        <!-- JS -->
-        <script src="js/script.js"></script>
-    </div>    
+<div class="inquiry-box">
+    <form name="message-form" onsubmit="return validateForm()" class="inquiry-form">
+        <label for="namaLengkap">Nama:</label>
+        <input type="text" name="namaLengkap" id="namaLengkap" placeholder="Nama Lengkap" />
+        <br />
+        <label for="tglLahir">Tanggal Lahir:</label>
+        <input type="date" name="tglLahir" id="tglLahir" />
+        <br />
+        <label>Jenis Kelamin:</label>
+        <label for="male">Laki-Laki</label>
+        <input type="radio" id="male" name="jenis" value="Laki-Laki" />
+        <label for="female">Perempuan</label>
+        <input type="radio" id="female" name="jenis" value="Perempuan" />
+        <br />
+        <label for="pesan">Pesan:</label>
+        <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+    <div class="output">
+        <p>Nama : <span id="namaPengirim"></span></p>
+        <p>Tanggal Lahir : <span id="tglLahirPengirim"></span></p>
+        <p>Jenis Kelamin : <span id="jenisPengirim"></span></p>
+        <p>Pesan : <span id="pesanPengirim"></span></p>
+    </div>
+</div>
+<!-- JS -->
+<script src="js/script.js"></script>
+    
 </body>
 </html>

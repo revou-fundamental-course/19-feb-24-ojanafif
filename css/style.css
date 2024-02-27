@@ -13,6 +13,26 @@ header {
     color: whitesmoke;
 }
 
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+h2, h5 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+
 .navigation {
     list-style-type: none;
 }
@@ -49,6 +69,10 @@ header {
     display: inline-block;
     flex-direction: column;
     color: whitesmoke;
+}
+
+.inquiry-form label {
+    display: grid;    
 }
 
 .output {
