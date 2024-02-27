@@ -19,7 +19,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    color: whitesmoke;;
+    color: whitesmoke;
+}
+
+.subheader-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -32,6 +41,7 @@ h2 {
     align-items: center;
     padding: 10px;
     color: whitesmoke;
+    margin-right: 20px;
 }
 
 h4 {
@@ -124,4 +134,13 @@ footer {
     text-align: right; /* Membuat teks footer menjadi rata kiri */
     font-size: 14px;
     margin-left: 10px; /* Memberikan margin kiri agar tidak tertutup oleh scroll bar */
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px;
+    color: whitesmoke;
+    margin-left: 12px;
 }
