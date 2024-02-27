@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Profile</title>
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/WarkopAKA.png" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,7 +24,7 @@
     </header>
     
     <div class="subheader">
-        <h1 id="home">Hii <span id="namaHeader" style="margin-left: 3px;"> </span>, Welcome To My Website</h1>
+        <h1 id="home">Hii <span id="namaHeader" style="margin-left: 3px;"> </span>, Welcome to Waroeng Ngopi AKA</h1>
     </div>
     <div class="subheader-bg">
         <h2>Deskripsi</h2>
@@ -40,6 +42,20 @@
             4. Mengedepankan Pelayanan Prima: Kami mengutamakan pelayanan pelanggan yang prima dan berorientasi pada kepuasan. Dengan menyediakan staf yang ramah, profesional, dan berpengetahuan, kami bertujuan untuk memastikan bahwa setiap kunjungan ke kafe kami merupakan pengalaman yang menyenangkan dan memuaskan.<br>            
             5. Mendukung Komunitas Lokal: Kami berkomitmen untuk menjadi bagian dari komunitas lokal kami dengan mendukung berbagai kegiatan dan acara lokal. Melalui kolaborasi dengan pelaku lokal dan inisiatif sosial, kami ingin membantu memajukan komunitas dan menciptakan dampak positif bagi masyarakat sekitar.</p>
     </div>
+    <br>
+    <div class="container">
+        <img class="img-slideShow" src="assets/img/WarkopAKA.png" />
+        <img class="img-slideShow" src="assets/img/Slide1.jpeg" />
+        <img class="img-slideShow" src="assets/img/slide2.jpg" />
+        <img class="img-slideShow" src="assets/img/slide3.jpeg" />
+        <img class="img-slideShow" src="assets/img/slide4.webp" />
+    
+        <div class="button-container">
+            <button class="btn" role="button" onclick="plusDivs(-1)">Prev</button>
+            <button class="btn" role="button" onclick="plusDivs(1)">Next</button>
+        </div>
+    </div>
+    
     <hr>
     <div class="subheader" id="our-headquarter">
         <h2>Our Headquarter</h2>
@@ -62,32 +78,32 @@
     <div class="subheader" id="message-us">
         <h2>Message Us</h2>
     </div>
-<div class="inquiry-box">
-    <form name="message-form" onsubmit="return validateForm()" class="inquiry-form">
-        <label for="namaLengkap">Nama:</label>
-        <input type="text" name="namaLengkap" id="namaLengkap" placeholder="Nama Lengkap" />
-        <br />
-        <label for="tglLahir">Tanggal Lahir:</label>
-        <input type="date" name="tglLahir" id="tglLahir" />
-        <br />
-        <label>Jenis Kelamin:</label>
-        <label for="male">Laki-Laki</label>
-        <input type="radio" id="male" name="jenis" value="Laki-Laki" />
-        <label for="female">Perempuan</label>
-        <input type="radio" id="female" name="jenis" value="Perempuan" />
-        <br />
-        <label for="pesan">Pesan:</label>
-        <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
-        <br />
-        <input type="submit" value="Submit" />
-    </form>
-    <div class="output">
-        <p>Nama : <span id="namaPengirim" style="margin-left: 10px;"></span></p>
-        <p>Tanggal Lahir : <span id="tglLahirPengirim" style="margin-left: 10px;"></span></p>
-        <p>Jenis Kelamin : <span id="jenisPengirim" style="margin-left: 10px;"></span></p>
-        <p>Pesan : <span id="pesanPengirim" style="margin-left: 10px;"></span></p>
+    <div class="inquiry-box">
+        <form name="message-form" onsubmit="return validateForm()" class="inquiry-form">
+            <label for="namaLengkap">Nama:</label>
+            <input type="text" name="namaLengkap" id="namaLengkap" placeholder="Nama Lengkap" />
+            <br />
+            <label for="tglLahir">Tanggal Lahir:</label>
+            <input type="date" name="tglLahir" id="tglLahir" />
+            <br />
+            <label>Jenis Kelamin:</label>
+            <label for="male">Laki-Laki</label>
+            <input type="radio" id="male" name="jenis" value="Laki-Laki" />
+            <label for="female">Perempuan</label>
+            <input type="radio" id="female" name="jenis" value="Perempuan" />
+            <br />
+            <label for="pesan">Pesan:</label>
+            <textarea name="pesan" id="pesan" placeholder="Pesan"></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+        <div class="output">
+            <p>Nama : <span id="namaPengirim" style="margin-left: 10px;"></span></p>
+            <p>Tanggal Lahir : <span id="tglLahirPengirim" style="margin-left: 10px;"></span></p>
+            <p>Jenis Kelamin : <span id="jenisPengirim" style="margin-left: 10px;"></span></p>
+            <p>Pesan : <span id="pesanPengirim" style="margin-left: 10px;"></span></p>
+        </div>
     </div>
-</div>
 <!-- JS -->
 <script src="js/script.js"></script>
 
