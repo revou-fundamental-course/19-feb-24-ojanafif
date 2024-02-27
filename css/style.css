@@ -11,6 +11,15 @@ header {
     align-items: center;
     padding: 10px;
     color: whitesmoke;
+    background-color: rgba(165, 165, 165, 0.05);
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: whitesmoke;;
 }
 
 a {
@@ -31,6 +40,7 @@ p {
     align-items: center;
     padding: 10px;
     color: whitesmoke;
+    margin-left: 15px;
 }
 
 .navigation {
@@ -63,6 +73,7 @@ p {
     display: flex;
     justify-content: space-around;
     color: whitesmoke;
+    margin-bottom: 50px;
 }
 
 .inquiry-form {
@@ -79,3 +90,15 @@ p {
     border: 2px solid whitesmoke;
 }
 
+footer {
+    position: fixed;
+    right: 0px;
+    bottom: 0;
+    width: calc(100% - 20px); /* Mengurangi lebar footer untuk memberikan ruang bagi scroll bar */
+    background-color: rgba(165, 165, 165, 0.05);
+    color: white;
+    padding: 10px;
+    text-align: right; /* Membuat teks footer menjadi rata kiri */
+    font-size: 14px;
+    margin-left: 10px; /* Memberikan margin kiri agar tidak tertutup oleh scroll bar */
+}
